@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Residencia Del Hamor</title>
+    <link href="/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body class="bg-[#F3F3E0] font-serif">
+<!-- Header Section -->
+<header>
+  <nav class="bg-[#ffffff] shadow-md w-full">
+    <div class="container mx-auto flex justify-between items-center py-4 px-4 sm:px-6">
+      <div class="flex items-center space-x-2 sm:space-x-4">
+        <img src="/assets/logo.webp" alt="Logo" class="h-10 sm:h-12 w-auto">
+        <h1 class="text-lg sm:text-2xl font-serif text-[#133E87]">Recidencia Del Hamor Beach Front<span class="text-[#CBDCEB]">.</span></h1>
+      </div>
+
+<!-- Navigation Links -->
+      <div class="md:hidden">
+        <button id="menu-toggle" class="text-[#133E87] focus:outline-none">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
+        </button>
+      </div>
+      <ul class="hidden md:flex space-x-4 lg:space-x-6 text-md lg:text-md">
+        <li><a href="index.html" class="text-[#133E87] hover:text-[#CBDCEB] transition duration-300">Home</a></li>
+        <li><a href="accomodation.html" class="text-[#133E87] hover:text-[#CBDCEB] transition duration-300">Accommodations</a></li>
+        <li><a href="ameneties and activies.html" class="text-[#133E87] hover:text-[#CBDCEB] transition duration-300">Amenities</a></li>
+        <li><a href="book.html" class="text-[#133E87] hover:text-[#CBDCEB] transition duration-300">Book</a></li>
+        <li><a href="contact.html" class="text-[#133E87] hover:text-[#CBDCEB] transition duration-300">Contact</a></li>
+      </ul>
+    </div>
+
+    <ul id="mobile-menu" class="hidden md:hidden bg-[#ffffff] text-center py-4">
+      <li class="py-2"><a href="index.html" class="text-[#133E87] hover:text-[#CBDCEB] transition duration-300">Home</a></li>
+      <li class="py-2"><a href="accomodation.html" class="text-[#133E87] hover:text-[#CBDCEB] transition duration-300">Accommodations</a></li>
+      <li class="py-2"><a href="ameneties and activies.html" class="text-[#133E87] hover:text-[#CBDCEB] transition duration-300">Amenities</a></li>
+      <li class="py-2"><a href="book.html" class="text-[#133E87] hover:text-[#CBDCEB] transition duration-300">Book</a></li>
+      <li class="py-2"><a href="contact.html" class="text-[#133E87] hover:text-[#CBDCEB] transition duration-300">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- Accommodations Section -->
+<section class="relative py-12 sm:py-16 md:py-20 px-4 sm:px-6 lg:px-8 bg-gray-50 overflow-hidden">
+  <h2 class="text-3xl sm:text-4xl md:text-4xl font-normal text-center text-[#133E87] mb-8 sm:mb-12">Our Rooms</h2>
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+    <!-- ROOM1 -->
+    <div class="bg-white shadow-md overflow-hidden transform hover:scale-105 transition duration-300 relative group">
+      <img src="/assets/room1.webp" alt="Standard Room" class="w-full h-48 sm:h-56 object-cover">
+      <div class="p-4">
+        <h3 class="text-lg font-bold text-[#133E87]">Standard Room</h3>
+        <p class="mt-1 text-sm text-[#133E87] font-semibold">₱5,600 / Night</p>
+        <p class="text-xs text-[#133E87]">Size: 30㎡ | Capacity: 2 | Bed: King</p>
+        <p class="text-xs text-[#133E87]">Wi-Fi, TV, AC</p>
+      </div>
+    </div>
+    <!-- ROOM2 -->
+    <div class="bg-white shadow-md overflow-hidden transform hover:scale-105 transition duration-300 relative group">
+      <img src="/assets/room2.webp" alt="Deluxe Room" class="w-full h-48 sm:h-56 object-cover">
+      <div class="p-4">
+        <h3 class="text-lg font-bold text-[#133E87]">Deluxe Room</h3>
+        <p class="mt-1 text-sm text-[#133E87] font-semibold">₱8,400 / Night</p>
+        <p class="text-xs text-[#133E87]">Size: 30㎡ | Capacity: 2 | Bed: King</p>
+        <p class="text-xs text-[#133E87]">Wi-Fi, TV, AC, Balcony</p>
+      </div>
+    </div>
+
+    <!-- ROOM3 -->
+    <div class="bg-white shadow-md overflow-hidden transform hover:scale-105 transition duration-300 relative group">
+      <img src="/assets/room3.webp" alt="Family Room" class="w-full h-48 sm:h-56 object-cover">
+      <div class="p-4">
+        <h3 class="text-lg font-bold text-[#133E87]">Family Room</h3>
+        <p class="mt-1 text-sm text-[#133E87] font-semibold">₱11,200 / Night</p>
+        <p class="text-xs text-[#133E87]">Size: 30㎡ | Capacity: 2 | Bed: King</p>
+        <p class="text-xs text-[#133E87]">Wi-Fi, TV, AC</p>
+      </div>
+    </div>
+
+    <!-- ROOM4 -->
+    <div class="bg-white shadow-md overflow-hidden transform hover:scale-105 transition duration-300 relative group">
+      <img src="/assets/room4.webp" alt="Suite Room" class="w-full h-48 sm:h-56 object-cover">
+      <div class="p-4">
+        <h3 class="text-lg font-bold text-[#133E87]">Suite Room</h3>
+        <p class="mt-1 text-sm text-[#133E87] font-semibold">₱14,000 / Night</p>
+        <p class="text-xs text-[#133E87]">Size: 30㎡ | Capacity: 2 | Bed: King</p>
+        <p class="text-xs text-[#133E87]">Wi-Fi, TV, AC</p>
+      </div>
+    </div>
+
+    <!-- ROOM5 -->
+    <div class="bg-white shadow-md overflow-hidden transform hover:scale-105 transition duration-300 relative group">
+      <img src="/assets/room5.webp" alt="Luxury Room" class="w-full h-48 sm:h-56 object-cover">
+      <div class="p-4">
+        <h3 class="text-lg font-bold text-[#133E87]">Luxury Room</h3>
+        <p class="mt-1 text-sm text-[#133E87] font-semibold">₱22,500 / Night</p>
+        <p class="text-xs text-[#133E87]">Size: 30㎡ | Capacity: 2 | Bed: King</p>
+        <p class="text-xs text-[#133E87]">Wi-Fi, TV, AC, Balcony</p>
+      </div>
+    </div>
+
+    <!-- ROOM6 -->
+    <div class="bg-white shadow-md overflow-hidden transform hover:scale-105 transition duration-300 relative group">
+      <img src="/assets/room6.webp" alt="Presidential Suite" class="w-full h-48 sm:h-56 object-cover">
+      <div class="p-4">
+        <h3 class="text-lg font-bold text-[#133E87]">Presidential Suite</h3>
+        <p class="mt-1 text-sm text-[#133E87] font-semibold">₱33,600 / Night</p>
+        <p class="text-xs text-[#133E87]">Size: 30㎡ | Capacity: 2 | Bed: King</p>
+        <p class="text-xs text-[#133E87]">Wi-Fi, TV, AC</p>
+      </div>
+    </div>
+  </div>
+  <div class="flex justify-center mt-8 sm:mt-10 space-x-2">
+    <button class="px-3 sm:px-4 py-2 bg-[#133E87] text-white hover:bg-[#0f2c66] text-sm sm:text-base">&laquo; Prev</button>
+    <button class="px-3 sm:px-4 py-2 bg-[#133E87] text-white hover:bg-[#0f2c66] text-sm sm:text-base">1</button>
+    <button class="px-3 sm:px-4 py-2 bg-[#CBDCEB] text-[#133E87] hover:bg-[#a4c1e0] text-sm sm:text-base">2</button>
+    <button class="px-3 sm:px-4 py-2 bg-[#133E87] text-white hover:bg-[#0f2c66] text-sm sm:text-base">Next &raquo;</button>
+  </div>
+</section>
+
+<!-- Footer Section -->
+<footer class="bg-[#133E87] text-[#F3F3E0] py-6 sm:py-8">
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
+      <div class="text-center md:text-left">
+        <h3 class="text-sm sm:text-base font-bold">Recidencia Del Hamor</h3>
+        <p class="text-xs sm:text-sm mt-1">Inspiring travelers.</p>
+      </div>
+      <div class="text-center md:text-left">
+        <h3 class="text-sm sm:text-base font-bold">Contact</h3>
+        <p class="text-xs sm:text-sm mt-1"><i class="fas fa-phone-alt"></i> (98) 765 43210</p>
+        <p class="text-xs sm:text-sm mt-1"><i class="fas fa-envelope"></i> sample.email@example.com</p>
+        <p class="text-xs sm:text-sm mt-1"><i class="fas fa-map-marker-alt"></i> Beachfront, J3HV+8X8, Sorsogon</p>
+      </div>
+      <div class="text-center md:text-left">
+        <h3 class="text-sm sm:text-base font-bold">Social</h3>
+        <div class="flex flex-col gap-1 sm:gap-2 text-xs sm:text-sm">
+          <a href="https://facebook.com/" target="_blank" class="flex items-center justify-center md:justify-start gap-1">
+            <i class="fab fa-facebook"></i> <span>Facebook</span>
+          </a>
+          <a href="https://instagram.com/" target="_blank" class="flex items-center justify-center md:justify-start gap-1">
+            <i class="fab fa-instagram"></i> <span>Instagram</span>
+          </a>
+          <a href="https://tiktok.com/" target="_blank" class="flex items-center justify-center md:justify-start gap-1">
+            <i class="fab fa-tiktok"></i> <span>TikTok</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="mt-6 sm:mt-8 text-center text-xs sm:text-sm border-t border-[#F3F3E0] pt-4">
+      <p>©2025 | Made with ♡ by <strong>Ashley Panganiban</strong></p>
+    </div>
+  </div>
+</footer>
+<!-- JavaScript -->
+<script>
+  const menuToggle = document.getElementById('menu-toggle');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  menuToggle.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+</script>
+    <script>
+        $(document).ready(function(){
+            $('.slick-carousel').slick({
+                dots: true,              
+                infinite: true,          
+                speed: 300,              
+                slidesToShow: 1,         
+                adaptiveHeight: true,    
+                autoplay: true,          
+                autoplaySpeed: 2000,    
+            });
+        });
+    </script>
+  </body>
+  </html>

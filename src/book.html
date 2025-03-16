@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Residencia Del Hamor</title>
+    <link href="/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body class="bg-[#F3F3E0] font-serif">
+<!-- Header Section -->
+<header>
+  <nav class="bg-[#ffffff] shadow-md w-full">
+    <div class="container mx-auto flex justify-between items-center py-4 px-4 sm:px-6">
+      <div class="flex items-center space-x-2 sm:space-x-4">
+        <img src="/assets/logo.webp" alt="Logo" class="h-10 sm:h-12 w-auto">
+        <h1 class="text-lg sm:text-2xl font-serif text-[#133E87]">Recidencia Del Hamor Beach Front<span class="text-[#CBDCEB]">.</span></h1>
+      </div>
+      <div class="md:hidden">
+        <button id="menu-toggle" class="text-[#133E87] focus:outline-none">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
+        </button>
+      </div>
+      <ul class="hidden md:flex space-x-4 lg:space-x-6 text-md lg:text-md">
+        <li><a href="index.html" class="text-[#133E87] hover:text-[#CBDCEB] transition duration-300">Home</a></li>
+        <li><a href="accomodation.html" class="text-[#133E87] hover:text-[#CBDCEB] transition duration-300">Accommodations</a></li>
+        <li><a href="ameneties and activies.html" class="text-[#133E87] hover:text-[#CBDCEB] transition duration-300">Amenities</a></li>
+        <li><a href="book.html" class="text-[#133E87] hover:text-[#CBDCEB] transition duration-300">Book</a></li>
+        <li><a href="contact.html" class="text-[#133E87] hover:text-[#CBDCEB] transition duration-300">Contact</a></li>
+      </ul>
+    </div>
+    <ul id="mobile-menu" class="hidden md:hidden bg-[#ffffff] text-center py-4">
+      <li class="py-2"><a href="index.html" class="text-[#133E87] hover:text-[#CBDCEB] transition duration-300">Home</a></li>
+      <li class="py-2"><a href="accomodation.html" class="text-[#133E87] hover:text-[#CBDCEB] transition duration-300">Accommodations</a></li>
+      <li class="py-2"><a href="ameneties and activies.html" class="text-[#133E87] hover:text-[#CBDCEB] transition duration-300">Amenities</a></li>
+      <li class="py-2"><a href="book.html" class="text-[#133E87] hover:text-[#CBDCEB] transition duration-300">Book</a></li>
+      <li class="py-2"><a href="contact.html" class="text-[#133E87] hover:text-[#CBDCEB] transition duration-300">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- Booking Section -->
+<section class="py-12 bg-gray-50">
+    <div class="container mx-auto px-4">
+        <div class="flex flex-wrap items-center bg-white rounded-lg shadow-lg overflow-hidden">
+            <div class="w-full md:w-1/2 p-4 bg-gradient-to-r from-blue-500 to-purple-500 rounded-lg">
+                <div class="w-full h-full bg-white p-2 rounded-lg">
+                    <img src="/assets/book_img.webp" alt="Vacation Rental" class="w-full h-full object-cover rounded-lg">
+                </div>
+            </div>
+            <div class="w-full md:w-1/2 p-8">
+                <h2 class="text-3xl font-normal text-[#133E87] mb-4">Reserve Your Perfect Getaway Today</h2>
+                <form onsubmit="return validateForm()">
+                    <label for="name" class="block text-[#133E87] mb-1">Name:</label>
+                    <input type="text" id="name" class="w-full p-2 border rounded-md mb-4 focus:ring-2 focus:ring-[#133E87]" required>
+
+                    <label for="contact" class="block text-[#133E87] mb-1">Contact:</label>
+                    <input type="text" id="contact" class="w-full p-2 border rounded-md mb-4 focus:ring-2 focus:ring-[#133E87]" required>
+
+                    <label for="check-in" class="block text-[#133E87] mb-1">Check In:</label>
+                    <input type="date" id="check-in" class="w-full p-2 border rounded-md mb-4 focus:ring-2 focus:ring-[#133E87]" required>
+
+                    <label for="check-out" class="block text-[#133E87] mb-1">Check Out:</label>
+                    <input type="date" id="check-out" class="w-full p-2 border rounded-md mb-4 focus:ring-2 focus:ring-[#133E87]" required>
+
+                    <label for="room" class="block text-[#133E87] mb-1">Room:</label>
+                    <select id="room" class="w-full p-2 border rounded-md mb-4 focus:ring-2 focus:ring-[#133E87]" required>
+                        <option value="Standard Room">Standard Room</option>
+                        <option value="Deluxe Room">Deluxe Room</option>
+                        <option value="Suite">Suite</option>
+                        <option value="Family Room">Family Room</option>
+                        <option value="Villa">Villa</option>
+                        <option value="Presidential Suite">Presidential Suite</option>
+                    </select>
+
+                    <button type="submit" class="w-full bg-[#133E87] text-white py-3 rounded-md hover:bg-[#CBDCEB] hover:text-[#133E87] transition duration-300">CHECK AVAILABILITY</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer Section -->
+<footer class="bg-[#133E87] text-[#F3F3E0] py-6 sm:py-8">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
+        <div class="text-center md:text-left">
+          <h3 class="text-sm sm:text-base font-bold">Recidencia Del Hamor</h3>
+          <p class="text-xs sm:text-sm mt-1">Inspiring travelers.</p>
+        </div>
+        <div class="text-center md:text-left">
+          <h3 class="text-sm sm:text-base font-bold">Contact</h3>
+          <p class="text-xs sm:text-sm mt-1"><i class="fas fa-phone-alt"></i> (98) 765 43210</p>
+          <p class="text-xs sm:text-sm mt-1"><i class="fas fa-envelope"></i> sample.email@example.com</p>
+          <p class="text-xs sm:text-sm mt-1"><i class="fas fa-map-marker-alt"></i> Beachfront, J3HV+8X8, Sorsogon</p>
+        </div>
+        <div class="text-center md:text-left">
+          <h3 class="text-sm sm:text-base font-bold">Social</h3>
+          <div class="flex flex-col gap-1 sm:gap-2 text-xs sm:text-sm">
+            <a href="https://facebook.com/" target="_blank" class="flex items-center justify-center md:justify-start gap-1">
+              <i class="fab fa-facebook"></i> <span>Facebook</span>
+            </a>
+            <a href="https://instagram.com/" target="_blank" class="flex items-center justify-center md:justify-start gap-1">
+              <i class="fab fa-instagram"></i> <span>Instagram</span>
+            </a>
+            <a href="https://tiktok.com/" target="_blank" class="flex items-center justify-center md:justify-start gap-1">
+              <i class="fab fa-tiktok"></i> <span>TikTok</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="mt-6 sm:mt-8 text-center text-xs sm:text-sm border-t border-[#F3F3E0] pt-4">
+        <p>©2025 | Made with ♡ by <strong>Ashley Panganiban</strong></p>
+      </div>
+    </div>
+  </footer>
+  <!-- JavaScript -->
+<script>
+  const menuToggle = document.getElementById('menu-toggle');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  menuToggle.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+</script>
+    <script>
+        $(document).ready(function(){
+            $('.slick-carousel').slick({
+                dots: true,              
+                infinite: true,          
+                speed: 300,              
+                slidesToShow: 1,         
+                adaptiveHeight: true,    
+                autoplay: true,          
+                autoplaySpeed: 2000,    
+            });
+        });
+    </script>
+</body>
+</html>
